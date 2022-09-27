@@ -1,0 +1,24 @@
+h1 {
+  line-height: 1.33;
+}
+
+h2 {
+  line-height: 1.55;
+}
+
+h3 {
+  line-height: 1.5;
+}
+
+h4, .h4 {
+  line-height: 1.25;
+}
+
+h5 {
+  line-height: 1.78;
+}
+
+
+@import "components/navbar";
+@import "components/icons";
+@import "components/bg";

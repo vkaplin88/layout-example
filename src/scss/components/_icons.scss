@@ -1,0 +1,7 @@
+.arrow-diagonal-white {
+  @include icon-size(12px, 12px, 12px);
+
+  display: block;
+  background: url("../images/svg/arrow-diagonal-white.svg") no-repeat;
+  background-size: cover;
+}
