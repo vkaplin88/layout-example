@@ -3,3 +3,13 @@
     justify-content: space-between;
     align-items: center;
 }
+
+.button-contact {
+    a {
+        padding-left: ($spacer * .24);
+    }
+
+    background: #FF9900;
+    display: flex;
+    align-items: center;
+}
