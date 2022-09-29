@@ -16,33 +16,47 @@
 </head>
 
 <body>
-  <div class="container-wxxl">
-    <div class="top-bar">
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-between mt-64">
       <div>
         <a href="/">
           <img src="src/images/svg/Logo-header.svg" alt="Logo">
         </a>
       </div>
       <nav>
-        <div class="nav-bar">
-          <a href="/">Startseite</a>
-          <select name="Leistungen" id="Leistungen">
-            <option value="value1">Leistungen</option>
-            <option value="value2" selected>Leistungen</option>
-            <option value="value3">Leistungen</option>
-          </select>
-          <select name="Referenzen" id="Referenzen">
-            <option value="value1">Referenzen</option>
-            <option value="value2" selected>Referenzen</option>
-            <option value="value3">Referenzen</option>
-          </select>
-          <a href="/">Über uns</a>
-        </div>
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Active</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Separated link</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Separated link</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Disabled</a>
+          </li>
+        </ul>
       </nav>
-      <div class="button-contact">
-        <a href="/">Kontakt</a>
-        <img src="src/images/svg/Exclude.svg" alt="Icon mail">
-      </div>
+      <a href="/" class="btn btn-primary d-flex align-items-center px-24 py-12">
+        <span>Kontakt</span>
+        <i class="icon-email ml-16" alt="Icon mail"></i>
+      </a>
     </div>
   </div>
   

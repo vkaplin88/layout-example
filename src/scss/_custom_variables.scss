@@ -11,6 +11,7 @@ $pale-gray: #fbfcfd !default;
 $pale-grey-two: #f0f0f5 !default;
 $pale-grey-three: #f2f4f8 !default;
 $pale-grey-four: #fafafa !default;
+$orange: #FF9900 !default;
 $colors: (
   "white": $white,
   "gray": $gray,
@@ -22,7 +23,7 @@ $theme-colors: () !default;
 $theme-colors:
   map-merge(
     (
-      "primary":        $primary,
+      "primary":        $orange,
       "white":          $white,
       "light-blue":     $light-blue,
       "gray":           $gray,
@@ -33,7 +34,8 @@ $theme-colors:
       "pale-grey-three":  $pale-grey-three,
       "pale-grey-four":  $pale-grey-four,
       "light-gray":     $light-gray,
-      "transparent-lb": $transparent-lb
+      "transparent-lb": $transparent-lb,
+      "orange":         $orange,
     ),
     $theme-colors
   );
@@ -104,9 +106,7 @@ $container-max-widths: (
   md: 720px,
   lg: 960px,
   xl: 1140px,
-  xxl: 1310px,
-  xxxl: 1310px,
-  uxxl: 1620px,
+  xxl: 1216px,
   wxxl: 1920px,
 ) !default;
 
@@ -151,7 +151,7 @@ $input-btn-font-size-lg: $font-size-lg !default;
 $input-height-lg: 60px !default;
 $input-btn-border-width: calc-rem(1px) !default;
 $input-border-color: $light-gray !default;
-$border-radius: calc-rem(24px) calc-rem(24px) 0 calc-rem(24px) !default;
+$border-radius: 0 !default;
 $border-radius-lg: calc-rem(4px) !default;
 $border-radius-sm: calc-rem(3px) !default;
 $btn-font-weight: $font-weight-semibold !default;
@@ -159,7 +159,7 @@ $btn-font-family: "Poppins", sans-serif !default;
 $btn-font-size: calc-rem(14px) !default;
 $btn-padding-y: calc-rem(13px) !default;
 $btn-padding-x: calc-rem(34px) !default;
-$btn-border-radius: calc-rem(24px) calc-rem(24px) 0 calc-rem(24px) !default;
+$btn-border-radius: 0 !default;
 $btn-border-radius-lg: $border-radius-lg !default;
 $btn-border-radius-sm: $border-radius-sm !default;
 $custom-checkbox-indicator-icon-checked: url("data:image/svg+xml,<svg aria-hidden='true' focusable='false' data-prefix='far' data-icon='check' class='svg-inline--fa fa-check fa-w-16' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><path fill='#ffffff' d='M435.848 83.466L172.804 346.51l-96.652-96.652c-4.686-4.686-12.284-4.686-16.971 0l-28.284 28.284c-4.686 4.686-4.686 12.284 0 16.971l133.421 133.421c4.686 4.686 12.284 4.686 16.971 0l299.813-299.813c4.686-4.686 4.686-12.284 0-16.971l-28.284-28.284c-4.686-4.686-12.284-4.686-16.97 0z'></path></svg>") !default;
@@ -177,77 +177,10 @@ $spacers:
   map-merge(
     (
       0: 0,
-      "3": calc-rem(3px),
-      "5": calc-rem(5px),
-      "7": calc-rem(7px),
-      "8": calc-rem(8px),
-      "10": calc-rem(10px),
-      "11": calc-rem(11px),
       "12": calc-rem(12px),
-      "13": calc-rem(13px),
-      "14": calc-rem(14px),
-      "15": calc-rem(15px),
       "16": calc-rem(16px),
-      "18": calc-rem(18px),
-      "19": calc-rem(19px),
-      "20": calc-rem(20px),
-      "23": calc-rem(23px),
       "24": calc-rem(24px),
-      "25": calc-rem(25px),
-      "27": calc-rem(27px),
-      "30": calc-rem(30px),
-      "32": calc-rem(32px),
-      "34": calc-rem(34px),
-      "35": calc-rem(35px),
-      "40": calc-rem(40px),
-      "38": calc-rem(38px),
-      "42": calc-rem(42px),
-      "45": calc-rem(45px),
-      "47": calc-rem(47px),
-      "50": calc-rem(50px),
-      "53": calc-rem(53px),
-      "55": calc-rem(55px),
-      "60": calc-rem(60px),
       "64": calc-rem(64px),
-      "65": calc-rem(65px),
-      "66": 66px,
-      "70": calc-rem(70px),
-      "75": calc-rem(75px),
-      "80": calc-rem(80px),
-      "82": calc-rem(82px),
-      "85": calc-rem(85px),
-      "90": calc-rem(90px),
-      "-90": 90px,
-      "95": calc-rem(95px),
-      "100": calc-rem(100px),
-      "105": calc-rem(105px),
-      "110": calc-rem(110px),
-      "115": calc-rem(115px),
-      "120": calc-rem(120px),
-      "125": calc-rem(125px),
-      "130": calc-rem(130px),
-      "135": calc-rem(135px),
-      "140": calc-rem(140px),
-      "145": calc-rem(145px),
-      "150": calc-rem(150px),
-      "155": calc-rem(155px),
-      "160": calc-rem(160px),
-      "165": calc-rem(165px),
-      "190": calc-rem(190px),
-      "202": calc-rem(202px),
-      "205": calc-rem(205px),
-      "215": calc-rem(215px),
-      "220": calc-rem(220px),
-      "225": calc-rem(225px),
-      "230": calc-rem(230px),
-      "240": calc-rem(240px),
-      "245": calc-rem(245px),
-      "270": calc-rem(270px),
-      "300": calc-rem(300px),
-      "360": calc-rem(360px),
-      "340": calc-rem(340px),
-      "540": calc-rem(540px),
-      "720": calc-rem(720px),
     ),
     $spacers
   );

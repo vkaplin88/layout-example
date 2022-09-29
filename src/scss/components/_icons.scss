@@ -5,3 +5,12 @@
   background: url("../images/svg/arrow-diagonal-white.svg") no-repeat;
   background-size: cover;
 }
+
+.icon-email {
+  @include icon-size(18px, 14px, 18px);
+
+  display: block;
+  background: url("../images/svg/Exclude.svg") no-repeat;
+  background-size: cover;
+  
+}
