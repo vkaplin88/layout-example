@@ -4,9 +4,9 @@ $light-blue: #00adff !default;
 $dark-blue: #071129 !default;
 $dark-gray: #1d2433 !default;
 $gray: #535a68 !default; // p
+$light-gray: #F5F8FA !default; // section 1
 $black: #000 !default; // p
 $transparent-lb: #F8F9FB !default;
-$light-gray: #edeff3 !default;
 $pale-gray: #fbfcfd !default;
 $pale-grey-two: #f0f0f5 !default;
 $pale-grey-three: #f2f4f8 !default;
@@ -27,13 +27,13 @@ $theme-colors:
       "white":          $white,
       "light-blue":     $light-blue,
       "gray":           $gray,
+      "light-gray":     $light-gray,
       "dark":           $dark-blue,
       "dark-gray":      $dark-gray,
       "pale-gray":      $pale-gray,
       "pale-grey-two":  $pale-grey-two,
       "pale-grey-three":  $pale-grey-three,
       "pale-grey-four":  $pale-grey-four,
-      "light-gray":     $light-gray,
       "transparent-lb": $transparent-lb,
       "orange":         $orange,
     ),
@@ -185,7 +185,7 @@ $spacers:
       "96": calc-rem(96px),
       "100": calc-rem(100px),
       "153": calc-rem(153px),
-      // "414": calc-rem(414px),
+      "178": calc-rem(178px),
     ),
     $spacers
   );
