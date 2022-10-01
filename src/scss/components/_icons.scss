@@ -14,3 +14,12 @@
   background-size: cover;
   
 }
+
+.icon-arrow-right {
+  @include icon-size(18px, 14px, 18px);
+
+  display: block;
+  background: url("../images/svg/chevron_right_24px.svg") no-repeat;
+  background-size: cover;
+  
+}
