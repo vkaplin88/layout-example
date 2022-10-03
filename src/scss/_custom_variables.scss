@@ -80,7 +80,7 @@ $h4-font-size: calc-rem(22px) !default;
 $h5-font-size: calc-rem(18px) !default;
 $h6-font-size: calc-rem(16px) !default;
 $headings-margin-bottom: calc-rem(25px) !default;
-$headings-font-family: "Poppins" !default;
+$headings-font-family: "DINPro-Bold" , sans-serif !default;
 $headings-font-weight: 700 !default;
 $headings-line-height: 1.2 !default;
 $headings-color: $dark-blue !default;
@@ -142,7 +142,7 @@ $navbar-light-brand-hover-color: $navbar-light-active-color !default;
 $input-font-size-lg: calc-rem(16px) !default;
 $input-btn-padding-y: calc-rem(15px) !default;
 $input-btn-padding-x: calc-rem(20px) !default;
-$input-btn-font-family: "Inter", sans-serif !default;
+$input-btn-font-family: "DINPro-Bold" , sans-serif !default;
 $input-btn-font-size: calc-rem(15px) !default;
 $input-btn-line-height: $line-height-base !default;
 $input-border-radius: calc-rem(4px) !default;
@@ -157,7 +157,7 @@ $border-radius: 0 !default;
 $border-radius-lg: calc-rem(4px) !default;
 $border-radius-sm: calc-rem(3px) !default;
 $btn-font-weight: $font-weight-semibold !default;
-$btn-font-family: "Poppins", sans-serif !default;
+$btn-font-family: "DINPro-Bold" , sans-serif !default;
 $btn-font-size: calc-rem(14px) !default;
 $btn-padding-y: calc-rem(13px) !default;
 $btn-padding-x: calc-rem(34px) !default;
@@ -195,7 +195,6 @@ $spacers:
       "168": calc-rem(168px),
       "178": calc-rem(178px),
       "671": calc-rem(671px),
-      // "256": calc-rem(256px),
     ),
     $spacers
   );
