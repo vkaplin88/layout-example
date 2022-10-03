@@ -18,6 +18,12 @@ h5 {
   line-height: 1.78;
 }
 
+.box-shadow {
+  -webkit-box-shadow: -50px 90px 0px 0px rgba(245,248,250,1);
+  -moz-box-shadow: -50px 90px 0px 0px rgba(245,248,250,1);
+  box-shadow: -50px 90px 0px 0px rgba(245,248,250,1);
+}
+
 
 @import "components/navbar";
 @import "components/icons";
