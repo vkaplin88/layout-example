@@ -1,24 +1,24 @@
 $white: #fff !default;
 $light_black: #263640 !default;
-$blue: #3067f1 !default;
+// $blue: #3067f1 !default;
 $light-blue: #00adff !default;
-$dark-blue: #071129 !default;
-$dark-gray: #1d2433 !default;
+// $dark-blue: #071129 !default;
+// $dark-gray: #1d2433 !default;
 $gray: #535a68 !default; // p
 $light-gray: #F5F8FA !default; // section 1
 $black: #000 !default; // p
-$transparent-lb: #F8F9FB !default;
-$pale-gray: #fbfcfd !default;
-$pale-grey-two: #f0f0f5 !default;
-$pale-grey-three: #f2f4f8 !default;
-$pale-grey-four: #fafafa !default;
+// $transparent-lb: #F8F9FB !default;
+// $pale-gray: #fbfcfd !default;
+// $pale-grey-two: #f0f0f5 !default;
+// $pale-grey-three: #f2f4f8 !default;
+// $pale-grey-four: #fafafa !default;
 $orange: #FF9900 !default;
 $colors: (
   "white": $white,
   "gray": $gray,
 );
-$primary: $blue !default;
-$gray: $gray !default;
+// $gray: $gray !default;
+$primary: $orange !default;
 $theme-colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $theme-colors:
@@ -31,39 +31,39 @@ $theme-colors:
       "white":          $white,
       "light-blue":     $light-blue,
       "gray":           $gray,
-      "dark":           $dark-blue,
-      "dark-gray":      $dark-gray,
-      "pale-gray":      $pale-gray,
-      "pale-grey-two":  $pale-grey-two,
-      "pale-grey-three":  $pale-grey-three,
-      "pale-grey-four":  $pale-grey-four,
-      "transparent-lb": $transparent-lb,
+      // "dark":           $dark-blue,
+      // "dark-gray":      $dark-gray,
+      // "pale-gray":      $pale-gray,
+      // "pale-grey-two":  $pale-grey-two,
+      // "pale-grey-three":  $pale-grey-three,
+      // "pale-grey-four":  $pale-grey-four,
+      // "transparent-lb": $transparent-lb,
     ),
     $theme-colors
   );
 $enable-responsive-font-sizes: true !default;
 $enable-shadows: true !default;
-$card-spacer-y: calc-rem(20px) !default;
-$card-spacer-x: calc-rem(25px) !default;
-$card-border-width: 1px !default;
-$card-border-radius: 0 !default;
-$card-inner-border-radius: 0 !default;
+// $card-spacer-y: calc-rem(20px) !default;
+// $card-spacer-x: calc-rem(25px) !default;
+// $card-border-width: 1px !default;
+// $card-border-radius: 0 !default;
+// $card-inner-border-radius: 0 !default;
 
 // Typography
 //
 // Font, line-height, and color for body text, headings, and more.
 
 // stylelint-disable value-keyword-case
-$font-family-sans-serif: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-sans-serif: "DINPro-Bold", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base: $font-family-sans-serif !default;
 // stylelint-enable value-keyword-case
 
 $font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
-$font-size-xl: $font-size-base * 1.4395 !default;
-$font-size-lg: $font-size-base * 1.125 !default;
-$font-size-sm: $font-size-base * 0.9375 !default;
-$font-size-xs: $font-size-base * 0.875 !default;
+// $font-size-xl: $font-size-base * 1.4395 !default;
+// $font-size-lg: $font-size-base * 1.125 !default;
+// $font-size-sm: $font-size-base * 0.9375 !default;
+// $font-size-xs: $font-size-base * 0.875 !default;
 $font-weight-lighter: lighter !default;
 $font-weight-light: 300 !default;
 $font-weight-normal: 400 !default;
@@ -79,12 +79,12 @@ $h3-font-size: calc-rem(28px) !default;
 $h4-font-size: calc-rem(22px) !default;
 $h5-font-size: calc-rem(18px) !default;
 $h6-font-size: calc-rem(16px) !default;
-$headings-margin-bottom: calc-rem(25px) !default;
+$headings-margin-bottom: calc-rem(25px) !default; // важное отступ от заголовков
 $headings-font-family: "DINPro-Bold" , sans-serif !default;
 $headings-font-weight: 700 !default;
 $headings-line-height: 1.2 !default;
-$headings-color: $dark-blue !default;
-$body-color: $gray !default;
+$headings-color: $black !default; // цвет заголовка
+$body-color: $black !default; // цвет шрифтов по умолчанию
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,
@@ -122,37 +122,37 @@ $navbar-nav-link-padding-x: 0 !default;
 $navbar-brand-font-size: calc-rem(14px) !default;
 
 // Compute the navbar-brand padding-y so the navbar-brand will have the same height as navbar-text and nav-link
-$navbar-brand-height: calc-rem(35px) !default;
-$navbar-brand-padding-y: calc-rem(27px) !default;
-$navbar-toggler-padding-y: 0.25rem !default;
-$navbar-toggler-padding-x: 0.75rem !default;
-$navbar-toggler-font-size: calc-rem(14px) !default;
-$navbar-toggler-border-radius: 0 !default;
-$navbar-light-toggler-border-color: transparent !default;
-$navbar-light-color: $dark-blue !default;
-$navbar-light-hover-color: $blue !default;
-$navbar-light-active-color: $blue !default;
-$navbar-light-disabled-color: rgba($dark-blue, 0.3) !default;
-$navbar-light-brand-color: $navbar-light-active-color !default;
-$navbar-light-brand-hover-color: $navbar-light-active-color !default;
+// $navbar-brand-height: calc-rem(35px) !default;
+// $navbar-brand-padding-y: calc-rem(27px) !default;
+// $navbar-toggler-padding-y: 0.25rem !default;
+// $navbar-toggler-padding-x: 0.75rem !default;
+// $navbar-toggler-font-size: calc-rem(14px) !default;
+// $navbar-toggler-border-radius: 0 !default;
+// $navbar-light-toggler-border-color: transparent !default;
+// $navbar-light-color: $black !default;
+// $navbar-light-hover-color: $blue !default;
+// $navbar-light-active-color: $blue !default;
+// $navbar-light-disabled-color: rgba($dark-blue, 0.3) !default;
+// $navbar-light-brand-color: $navbar-light-active-color !default;
+// $navbar-light-brand-hover-color: $navbar-light-active-color !default;
 
 // Buttons + Forms
 //
 // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
-$input-font-size-lg: calc-rem(16px) !default;
-$input-btn-padding-y: calc-rem(15px) !default;
-$input-btn-padding-x: calc-rem(20px) !default;
-$input-btn-font-family: "DINPro-Bold" , sans-serif !default;
-$input-btn-font-size: calc-rem(15px) !default;
-$input-btn-line-height: $line-height-base !default;
-$input-border-radius: calc-rem(4px) !default;
-$input-height: 48px !default;
-$input-btn-padding-y-lg: calc-rem(15px) !default;
-$input-btn-padding-x-lg: calc-rem(20px) !default;
-$input-btn-font-size-lg: $font-size-lg !default;
-$input-height-lg: 60px !default;
-$input-btn-border-width: calc-rem(1px) !default;
-$input-border-color: $light-gray !default;
+// $input-font-size-lg: calc-rem(16px) !default;
+// $input-btn-padding-y: calc-rem(15px) !default;
+// $input-btn-padding-x: calc-rem(20px) !default;
+// $input-btn-font-family: "DINPro-Bold" , sans-serif !default;
+// $input-btn-font-size: calc-rem(15px) !default;
+// $input-btn-line-height: $line-height-base !default;
+// $input-border-radius: calc-rem(4px) !default;
+// $input-height: 48px !default;
+// $input-btn-padding-y-lg: calc-rem(15px) !default;
+// $input-btn-padding-x-lg: calc-rem(20px) !default;
+// $input-btn-font-size-lg: $font-size-lg !default;
+// $input-height-lg: 60px !default;
+// $input-btn-border-width: calc-rem(1px) !default;
+// $input-border-color: $light-gray !default;
 $border-radius: 0 !default;
 $border-radius-lg: calc-rem(4px) !default;
 $border-radius-sm: calc-rem(3px) !default;
@@ -164,7 +164,7 @@ $btn-padding-x: calc-rem(34px) !default;
 $btn-border-radius: 0 !default;
 $btn-border-radius-lg: $border-radius-lg !default;
 $btn-border-radius-sm: $border-radius-sm !default;
-$custom-checkbox-indicator-icon-checked: url("data:image/svg+xml,<svg aria-hidden='true' focusable='false' data-prefix='far' data-icon='check' class='svg-inline--fa fa-check fa-w-16' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><path fill='#ffffff' d='M435.848 83.466L172.804 346.51l-96.652-96.652c-4.686-4.686-12.284-4.686-16.971 0l-28.284 28.284c-4.686 4.686-4.686 12.284 0 16.971l133.421 133.421c4.686 4.686 12.284 4.686 16.971 0l299.813-299.813c4.686-4.686 4.686-12.284 0-16.971l-28.284-28.284c-4.686-4.686-12.284-4.686-16.97 0z'></path></svg>") !default;
+// $custom-checkbox-indicator-icon-checked: url("data:image/svg+xml,<svg aria-hidden='true' focusable='false' data-prefix='far' data-icon='check' class='svg-inline--fa fa-check fa-w-16' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><path fill='#ffffff' d='M435.848 83.466L172.804 346.51l-96.652-96.652c-4.686-4.686-12.284-4.686-16.971 0l-28.284 28.284c-4.686 4.686-4.686 12.284 0 16.971l133.421 133.421c4.686 4.686 12.284 4.686 16.971 0l299.813-299.813c4.686-4.686 4.686-12.284 0-16.971l-28.284-28.284c-4.686-4.686-12.284-4.686-16.97 0z'></path></svg>") !default;
 
 // Spacing
 //
@@ -199,32 +199,32 @@ $spacers:
     $spacers
   );
 $line-height-base: 1.56 !default;
-$line-height-lg: 1.42 !default;
-$line-height-sm: 1.3 !default;
-$yiq-contrasted-threshold: 195 !default;
-$hr-border-width: 1px !default;
-$hr-border-color: rgba($white, 0.25) !default;
-$hr-margin-y: calc-rem(16px) !default;
+// $line-height-lg: 1.42 !default;
+// $line-height-sm: 1.3 !default;
+// $yiq-contrasted-threshold: 195 !default;
+// $hr-border-width: 1px !default;
+// $hr-border-color: rgba($white, 0.25) !default;
+// $hr-margin-y: calc-rem(16px) !default;
 
 // Carousel
 
-$component-active-color: $white !default;
-$custom-control-indicator-checked-color: ff5a5f !default;
-$custom-control-indicator-checked-disabled-bg: rgba(theme-color("primary"), 0.5) !default;
-$custom-control-indicator-checked-box-shadow: none !default;
-$custom-control-indicator-unchecked-color: 909093 !default;
-$custom-radio-indicator-icon-unchecked: str-replace(url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cdefs%3E%3Cstyle%3E .cls-1%7Bfill:%23fff;stroke:%23#{$custom-control-indicator-unchecked-color};stroke-width:2px%7D.cls-2%7Bfill:%23#{$custom-control-indicator-unchecked-color}%7D.cls-3%7Bstroke:none%7D.cls-4%7Bfill:none%7D %3C/style%3E%3C/defs%3E%3Cg id='Group_459' data-name='Group 459' transform='translate(-644 -412)'%3E%3Cg id='Rectangle_668' class='cls-1' data-name='Rectangle 668' transform='translate(644 412)'%3E%3Crect width='20' height='20' class='cls-3' rx='10'/%3E%3Crect width='18' height='18' x='1' y='1' class='cls-4' rx='9'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"), "#", "%23") !default;
-$custom-radio-indicator-icon-checked: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cdefs%3E%3Cstyle%3E .cls-1%7Bfill:%23fff;stroke:%23#{$custom-control-indicator-checked-color};stroke-width:2px%7D.cls-2%7Bfill:%23#{$custom-control-indicator-checked-color}%7D.cls-3%7Bstroke:none%7D.cls-4%7Bfill:none%7D %3C/style%3E%3C/defs%3E%3Cg id='Group_459' data-name='Group 459' transform='translate(-644 -412)'%3E%3Cg id='Rectangle_668' class='cls-1' data-name='Rectangle 668' transform='translate(644 412)'%3E%3Crect width='20' height='20' class='cls-3' rx='10'/%3E%3Crect width='18' height='18' x='1' y='1' class='cls-4' rx='9'/%3E%3C/g%3E%3Ccircle id='Ellipse_80' cx='6' cy='6' r='6' class='cls-2' data-name='Ellipse 80' transform='translate(648 416)'/%3E%3C/g%3E%3C/svg%3E"), "#", "%23") !default;
-$modal-backdrop-bg: $dark-blue !default;
-$modal-backdrop-opacity: 0.8 !default;
-$modal-content-border-width: 0;
-$modal-content-border-radius: 0 !default;
-$modal-xxl: 1135px !default;
-$modal-sxl: 947px !default;
-$modal-xl: 675px !default;
-$modal-lg: 550px !default;
-$modal-md: 500px !default;
-$modal-sm: calc(100% - 15px) !default;
+// $component-active-color: $white !default;
+// $custom-control-indicator-checked-color: ff5a5f !default;
+// $custom-control-indicator-checked-disabled-bg: rgba(theme-color("primary"), 0.5) !default;
+// $custom-control-indicator-checked-box-shadow: none !default;
+// $custom-control-indicator-unchecked-color: 909093 !default;
+// $custom-radio-indicator-icon-unchecked: str-replace(url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cdefs%3E%3Cstyle%3E .cls-1%7Bfill:%23fff;stroke:%23#{$custom-control-indicator-unchecked-color};stroke-width:2px%7D.cls-2%7Bfill:%23#{$custom-control-indicator-unchecked-color}%7D.cls-3%7Bstroke:none%7D.cls-4%7Bfill:none%7D %3C/style%3E%3C/defs%3E%3Cg id='Group_459' data-name='Group 459' transform='translate(-644 -412)'%3E%3Cg id='Rectangle_668' class='cls-1' data-name='Rectangle 668' transform='translate(644 412)'%3E%3Crect width='20' height='20' class='cls-3' rx='10'/%3E%3Crect width='18' height='18' x='1' y='1' class='cls-4' rx='9'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"), "#", "%23") !default;
+// $custom-radio-indicator-icon-checked: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cdefs%3E%3Cstyle%3E .cls-1%7Bfill:%23fff;stroke:%23#{$custom-control-indicator-checked-color};stroke-width:2px%7D.cls-2%7Bfill:%23#{$custom-control-indicator-checked-color}%7D.cls-3%7Bstroke:none%7D.cls-4%7Bfill:none%7D %3C/style%3E%3C/defs%3E%3Cg id='Group_459' data-name='Group 459' transform='translate(-644 -412)'%3E%3Cg id='Rectangle_668' class='cls-1' data-name='Rectangle 668' transform='translate(644 412)'%3E%3Crect width='20' height='20' class='cls-3' rx='10'/%3E%3Crect width='18' height='18' x='1' y='1' class='cls-4' rx='9'/%3E%3C/g%3E%3Ccircle id='Ellipse_80' cx='6' cy='6' r='6' class='cls-2' data-name='Ellipse 80' transform='translate(648 416)'/%3E%3C/g%3E%3C/svg%3E"), "#", "%23") !default;
+// $modal-backdrop-bg: $dark-blue !default;
+// $modal-backdrop-opacity: 0.8 !default;
+// $modal-content-border-width: 0;
+// $modal-content-border-radius: 0 !default;
+// $modal-xxl: 1135px !default;
+// $modal-sxl: 947px !default;
+// $modal-xl: 675px !default;
+// $modal-lg: 550px !default;
+// $modal-md: 500px !default;
+// $modal-sm: calc(100% - 15px) !default;
 
 // Grid columns
 //
@@ -236,27 +236,9 @@ $grid-gutter-width: calc-rem(20px) !default;
 //
 // Dropdown menu container and contents.
 
-$dropdown-bg: $white !default;
-$dropdown-border-color: $white !default;
-$border-color: $light-gray !default;
-$card-bg: transparent !default;
-
-// Tables
-//
-// Customizes the `.table` component with basic values, each used across all table variations.
-
-$table-cell-padding: calc-rem(13px) calc-rem(15px) !default;
-$table-cell-padding-sm: 0.3rem !default;
-$table-color: $body-color !default;
-$table-bg: null !default;
-$table-accent-bg: rgba($black, 0.05) !default;
-$table-hover-color: $table-color !default;
-$table-hover-bg: rgba($black, 0.075) !default;
-$table-active-bg: $table-hover-bg !default;
-$table-border-width: 1px !default;
-$table-border-color: $light-gray !default;
-$table-head-bg: $light-gray !default;
-$table-head-color: $dark-blue !default;
-$table-th-font-weight: 600 !default;
+// $dropdown-bg: $white !default;
+// $dropdown-border-color: $white !default;
+// $border-color: $light-gray !default;
+// $card-bg: transparent !default;
 
 @import "~bootstrap/scss/variables";

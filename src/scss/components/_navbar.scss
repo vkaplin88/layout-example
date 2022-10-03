@@ -1,0 +1,13 @@
+.navbar {
+        .nav-item {
+        .nav-link {
+            line-height: 75px;
+        }
+    
+        &.hover {
+            .nav-link {
+            color: $primary;
+            }
+        }
+    }
+}
