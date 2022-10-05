@@ -61,6 +61,7 @@ $font-family-base: $font-family-sans-serif !default;
 
 $font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
 // $font-size-xl: $font-size-base * 1.4395 !default;
+$font-size-xxl: $font-size-base * 2 !default; // 32px
 $font-size-lg: $font-size-base * 1.25 !default; // 20px
 $font-size-sm: $font-size-base * 1 !default; // 16px
 $font-size-xs: $font-size-base * 0.875 !default; // 14 px
@@ -197,6 +198,7 @@ $spacers:
       "153": calc-rem(153px),
       "168": calc-rem(168px),
       "178": calc-rem(178px),
+      "256": calc-rem(256px),
       "671": calc-rem(671px),
     ),
     $spacers
