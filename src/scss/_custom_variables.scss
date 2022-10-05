@@ -54,16 +54,16 @@ $enable-shadows: true !default;
 // Font, line-height, and color for body text, headings, and more.
 
 // stylelint-disable value-keyword-case
-$font-family-sans-serif: "DINPro-Bold", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-sans-serif: "DINPro-Medium", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base: $font-family-sans-serif !default;
 // stylelint-enable value-keyword-case
 
 $font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
 // $font-size-xl: $font-size-base * 1.4395 !default;
-// $font-size-lg: $font-size-base * 1.125 !default;
-// $font-size-sm: $font-size-base * 0.9375 !default;
-// $font-size-xs: $font-size-base * 0.875 !default;
+$font-size-lg: $font-size-base * 1.25 !default; // 20px
+$font-size-sm: $font-size-base * 1 !default; // 16px
+$font-size-xs: $font-size-base * 0.875 !default; // 14 px
 $font-weight-lighter: lighter !default;
 $font-weight-light: 300 !default;
 $font-weight-normal: 400 !default;
@@ -74,12 +74,12 @@ $font-weight-bolder: bolder !default;
 $font-weight-base: $font-weight-medium !default;
 $line-height-base: 1.5 !default;
 $h1-font-size: calc-rem(60px) !default;
-$h2-font-size: calc-rem(42px) !default;
-$h3-font-size: calc-rem(28px) !default;
-$h4-font-size: calc-rem(22px) !default;
+$h2-font-size: calc-rem(32px) !default;
+$h3-font-size: calc-rem(24px) !default;
+$h4-font-size: calc-rem(20px) !default;
 $h5-font-size: calc-rem(18px) !default;
 $h6-font-size: calc-rem(16px) !default;
-$headings-margin-bottom: calc-rem(25px) !default; // важное отступ от заголовков
+$headings-margin-bottom: calc-rem(16px) !default; // важное отступ от заголовков
 $headings-font-family: "DINPro-Bold" , sans-serif !default;
 $headings-font-weight: 700 !default;
 $headings-line-height: 1.2 !default;
@@ -201,7 +201,7 @@ $spacers:
     ),
     $spacers
   );
-$line-height-base: 1.56 !default;
+$line-height-base: 1.75 !default;
 // $line-height-lg: 1.42 !default;
 // $line-height-sm: 1.3 !default;
 // $yiq-contrasted-threshold: 195 !default;

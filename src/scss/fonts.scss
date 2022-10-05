@@ -12,28 +12,30 @@
     font-display: swap;
   }
 
-//   @font-face {
-//     src: url(“../fonts/DINPro/DinPro-Bold.eot”);
-//     src:
-//       local(“DinPro-Bold”),
-//       url(“../fonts/DINPro/DinPro-Bold.eot?#iefix”) format(“embedded-opentype”),
-//       url(“../fonts/DINPro/DinPro-Bold.woff”) format(“woff”),
-//       url(“../fonts/DINPro/DinPro-Bold.ttf”) format(“truetype”);
-//     font-family: "DINPro-Medium";
-//     font-weight: 500;
-//     font-style: normal;
-//     font-display: swap;
-//   }
+  @font-face {
+    src: url("../fonts/DINPro/DINPro-Medium.eot");
+    src:
+      local("DINPro-Medium"),
+      local("DINPro-Medium"),
+      url("../fonts/DINPro/DINPro-Medium.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/DINPro/DINPro-Medium.woff") format("woff"),
+      url("../fonts/DINPro/DINPro-Medium.ttf") format("truetype");
+    font-family: "DINPro-Medium";
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
 
-//   @font-face {
-//     src: url(“../fonts/DINPro/DinPro-Bold.eot”);
-//     src:
-//       local(“DinPro-Bold”),
-//       url(“../fonts/DINPro/DinPro-Bold.eot?#iefix”) format(“embedded-opentype”),
-//       url(“../fonts/DINPro/DinPro-Bold.woff”) format(“woff”),
-//       url(“../fonts/DINPro/DinPro-Bold.ttf”) format(“truetype”);
-//     font-family: "DINPro-Light";
-//     font-weight: 300;
-//     font-style: normal;
-//     font-display: swap;
-//   }
+  @font-face {
+    src: url("../fonts/DINPro/DINPro-Light.eot");
+    src:
+      local("DINPro-Light"),
+      local("DINPro-Light"),
+      url("../fonts/DINPro/DINPro-Light.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/DINPro/DINPro-Light.woff") format("woff"),
+      url("../fonts/DINPro/DINPro-Light.ttf") format("truetype");
+    font-family: "DINPro-Light";
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }

@@ -3,15 +3,15 @@ h1 {
 }
 
 h2 {
-  line-height: 1.55;
+  line-height: calc-rem(45px);
 }
 
 h3 {
-  line-height: 1.5;
+  line-height: calc-rem(44px);
 }
 
 h4, .h4 {
-  line-height: 1.25;
+  line-height: calc-rem(30px);
 }
 
 h5 {
@@ -24,11 +24,23 @@ h5 {
   box-shadow: -50px 90px 0px 0px rgba(245,248,250,1);
 }
 
-// .box-shadow {
-//   -webkit-box-shadow: -60px 120px 0px 0px rgba(245,248,250,1);
-// -moz-box-shadow: -60px 120px 0px 0px rgba(245,248,250,1);
-// box-shadow: -60px 120px 0px 0px rgba(245,248,250,1);
-// }
+.text-xs {
+  font-size: $font-size-xs;
+  line-height: calc-rem(20px);
+  color: #929A9F;
+}
+
+.text-sm {
+  font-size: $font-size-sm;
+  line-height: calc-rem(28px);
+  color: #929A9F;
+}
+
+.text-lg {
+  font-size: $font-size-lg;
+  line-height: calc-rem(30px);
+  color: #263640;
+}
 
 
 @import "components/navbar";
