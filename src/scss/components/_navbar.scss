@@ -1,12 +1,15 @@
 .navbar {
     .nav-item {
         .nav-link {
-            line-height: 75px;
+            color: $light_black;
+            &:hover {
+                color: $orange;
+            }
         }
-    
-        &.hover {
+        &.active {
             .nav-link {
-            color: $primary;
+                color: $orange;
+                border-bottom: 1px solid $orange;
             }
         }
     }
