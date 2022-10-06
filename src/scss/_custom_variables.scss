@@ -1,11 +1,12 @@
 $white: #fff !default;
-$light_black: #263640 !default;
+$light-black: #263640 !default;
 // $blue: #3067f1 !default;
 $light-blue: #00adff !default;
 // $dark-blue: #071129 !default;
 // $dark-gray: #1d2433 !default;
 $gray: #535a68 !default; // p
 $light-gray: #F5F8FA !default; // section 1
+$normal-gray: #929A9F !default; // text-xs / text-sm
 $black: #000 !default; // p
 // $transparent-lb: #F8F9FB !default;
 // $pale-gray: #fbfcfd !default;
@@ -25,12 +26,13 @@ $theme-colors:
   map-merge(
     (
       "primary":        $orange,
-      "light_black":    $light_black,
+      "light-black":    $light_black,
       "light-gray":     $light-gray,
       "orange":         $orange,
       "white":          $white,
       "light-blue":     $light-blue,
       "gray":           $gray,
+      "normal-gray":    $normal-gray,
       // "dark":           $dark-blue,
       // "dark-gray":      $dark-gray,
       // "pale-gray":      $pale-gray,
@@ -198,6 +200,7 @@ $spacers:
       "98": calc-rem(98px),
       "100": calc-rem(100px),
       "101": calc-rem(101px),
+      "145": calc-rem(145px),
       "153": calc-rem(153px),
       "168": calc-rem(168px),
       "178": calc-rem(178px),
