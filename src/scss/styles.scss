@@ -2,7 +2,7 @@ h1 {
   line-height: 1.33;
 }
 
-h2 {
+h2, .h2 {
   line-height: calc-rem(45px);
 }
 
@@ -22,6 +22,10 @@ h5 {
   -webkit-box-shadow: -50px 90px 0px 0px rgba(245,248,250,1);
   -moz-box-shadow: -50px 90px 0px 0px rgba(245,248,250,1);
   box-shadow: -50px 90px 0px 0px rgba(245,248,250,1);
+}
+
+.ls-01 {
+  letter-spacing: 0.1em;
 }
 
 .text-xs {
@@ -54,6 +58,18 @@ h5 {
   height: 662px;
   left: 660px;
   top: 98px;
+}
+
+.img-section-5 {
+  img {
+    position: relative;
+    top: -160px;
+    right: 0;
+  }
+}
+
+.mt--100 {
+  margin-top: -100px
 }
 
 

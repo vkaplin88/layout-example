@@ -189,6 +189,7 @@ $spacers:
       "38": calc-rem(38px),
       "40": calc-rem(40px),
       "53": calc-rem(53px),
+      "56": calc-rem(56px),
       "64": calc-rem(64px),
       "74": calc-rem(74px),
       "80": calc-rem(80px),
@@ -210,9 +211,9 @@ $line-height-base: 1.75 !default;
 // $line-height-lg: 1.42 !default;
 // $line-height-sm: 1.3 !default;
 // $yiq-contrasted-threshold: 195 !default;
-// $hr-border-width: 1px !default;
-// $hr-border-color: rgba($white, 0.25) !default;
-// $hr-margin-y: calc-rem(16px) !default;
+$hr-border-width: 1px !default;
+$hr-border-color: rgba($white, 0.2) !default;
+$hr-margin-y: 0 !default;
 
 // Carousel
 
