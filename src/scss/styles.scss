@@ -68,6 +68,20 @@ h5 {
   margin-top: -100px
 }
 
+.bottom-link {
+  a + a {
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 1px;
+      height: 14px;
+      background-color: $normal-gray;
+      margin-left: 8px;
+      margin-right: 11px;
+      vertical-align: middle;
+    }
+  }
+}
 
 @import "components/navbar";
 @import "components/icons";
