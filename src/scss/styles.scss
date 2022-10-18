@@ -83,6 +83,10 @@ h5 {
   }
 }
 
+@include media-breakpoint-down(lg) {
+
+}
+
 @import "components/navbar";
 @import "components/icons";
 @import "components/bg";
